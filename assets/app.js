@@ -45,7 +45,6 @@ var quizApp = {
     answerArea.empty();
     answerArea.html("<h4>Wrong Answer.</h4>");
     answerArea.append("<h4>Correct Answer: " + this.questions[this.currentQuestion].correctAnswer + "</h4></br>");
-    
 
     if (this.currentQuestion === this.questions.length - 1) {
       // 10 questions finished
@@ -62,7 +61,6 @@ var quizApp = {
     $("#txtQuestion").empty();
     answerArea.empty();
     answerArea.html("<h4>Correct Answer!</h4></br>");
-    
 
     if (this.currentQuestion === this.questions.length - 1) {
       // 10 questions finished
@@ -87,7 +85,6 @@ $(document).ready(function() {
   // get questions from JSON file & initialize
   // CORS policy error in Chrome due to security, but works in web server
   $.getJSON("./assets/questions.json", function(data) {
-    console.log(data.questions)
     quizApp.questions = data.questions;
   })
 

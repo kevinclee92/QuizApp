@@ -29,7 +29,6 @@ var quizApp = {
   },
 
   clicked: function(event) {
-
     if ($(event.target).attr("data-name") === this.questions[this.currentQuestion].correctAnswer) {
       this.answeredCorrectly();
     }
@@ -39,7 +38,6 @@ var quizApp = {
   },
 
   answeredIncorrectly: function() {
-    
     this.incorrect++;
     $("#incorrect_counter").text(this.incorrect);
 
@@ -47,37 +45,31 @@ var quizApp = {
     answerArea.empty();
     answerArea.html("<h4>Wrong Answer.</h4>");
     answerArea.append("<h4>Correct Answer: " + this.questions[this.currentQuestion].correctAnswer + "</h4></br>");
-    answerArea.append("<button class='btn btn-secondary' id='btnNextQuestion'>Next Question</button>");
-
     
 
     if (this.currentQuestion === this.questions.length - 1) {
-      $("#txtQuestion").empty();
-      answerArea.empty();
-      answerArea.html("<h4>Wrong Answer.</h4>");
-      answerArea.append("<h4>Correct Answer: " + this.questions[this.currentQuestion].correctAnswer + "</h4></br>");
+      // 10 questions finished
       this.gameOver()
+    } else {
+      answerArea.append("<button class='btn btn-secondary' id='btnNextQuestion'>Next Question</button>");
     }
-    
   },
 
   answeredCorrectly: function() {
-
     this.correct++;
     $("#correct_counter").text(this.correct);
 
     $("#txtQuestion").empty();
     answerArea.empty();
     answerArea.html("<h4>Correct Answer!</h4></br>");
-    answerArea.append("<button class='btn btn-secondary' id='btnNextQuestion'>Next Question</button>");
+    
 
     if (this.currentQuestion === this.questions.length - 1) {
-      $("#txtQuestion").empty();
-      answerArea.empty();
-      answerArea.html("<h4>Correct Answer!</h4></br>");
+      // 10 questions finished
       this.gameOver()
+    } else {
+      answerArea.append("<button class='btn btn-secondary' id='btnNextQuestion'>Next Question</button>");
     }
-    
   },
 
   reset: function() {
@@ -90,8 +82,6 @@ var quizApp = {
     this.loadQuestion();
   }
 };
-
-
 
 $(document).ready(function() {
   // get questions from JSON file & initialize
@@ -107,6 +97,5 @@ $(document).ready(function() {
   $(document).on("click", ".answer", (event) => quizApp.clicked.bind(quizApp, event)())
   $(document).on("click", "#btnNextQuestion", quizApp.nextQuestion.bind(quizApp))
 
-  
 })
 

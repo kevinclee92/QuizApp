@@ -31,8 +31,7 @@ let quizApp = {
   clicked: function(event) {
     if ($(event.target).attr("data-name") === this.questions[this.currentQuestion].correctAnswer) {
       this.answeredCorrectly();
-    }
-    else {
+    } else {
       this.answeredIncorrectly();
     }
   },

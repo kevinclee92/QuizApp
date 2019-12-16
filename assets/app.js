@@ -43,7 +43,7 @@ var quizApp = {
 
     $("#txtQuestion").empty();
     answerArea.empty();
-    answerArea.html("<h4>Wrong Answer.</h4>");
+    answerArea.html("<h4 class='red-text'>Wrong Answer.</h4>");
     answerArea.append("<h4>Correct Answer: " + this.questions[this.currentQuestion].correctAnswer + "</h4></br>");
 
     if (this.currentQuestion === this.questions.length - 1) {
@@ -60,7 +60,7 @@ var quizApp = {
 
     $("#txtQuestion").empty();
     answerArea.empty();
-    answerArea.html("<h4>Correct Answer!</h4></br>");
+    answerArea.html("<h4 class='green-text'>Correct Answer!</h4></br>");
 
     if (this.currentQuestion === this.questions.length - 1) {
       // 10 questions finished

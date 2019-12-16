@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Fireworks originated in what Country?",
+      "choices": ["England", "China", "India", "Spain"],
+      "correctAnswer": "China"
+    },
+    {
+      "question": "In South America, what is the largest country?",
+      "choices": ["Brazil", "Argentina", "Chile", "Peru"],
+      "correctAnswer": "Brazil"
+    },
+    {
+      "question": "What is the world's biggest island?",
+      "choices": ["Madagascar", "Great Britain", "Greenland", "Honshu, Japan"],
+      "correctAnswer": "Greenland"
+    },
+    {
+      "question": "In what country can one find 40 species of lemurs?",
+      "choices": ["Brazil", "Africa", "United States", "Madagascar"],
+      "correctAnswer": "Madagascar"
+    },
+    {
+      "question": "What country has the second largest population in the world?",
+      "choices": ["China", "India", "United States", "Russia"],
+      "correctAnswer": "India"
+    },
+    {
+      "question": "What country was the first to land a man on the moon?",
+      "choices": ["Russia", "United States", "Canada", "China"],
+      "correctAnswer": "United States"
+    },
+    {
+      "question": "What is the world's largest ocean?",
+      "choices": ["Atlantic Ocean", "Arctic Ocean", "Pacific Ocean", "Indian Ocean"],
+      "correctAnswer": "Pacific Ocean"
+    },
+    {
+      "question": "Celine Dion was born in what country?",
+      "choices": ["France", "United States", "United Kingdom", "Canada"],
+      "correctAnswer": "Canada"
+    },
+    {
+      "question": "Which country is Prague in?",
+      "choices": ["Germany", "Italy", "Czech Republic", "France"],
+      "correctAnswer": "Czech Republic"
+    },
+    {
+      "question": "What percentage of the world's land area is occupied by Asia, the largest continent?",
+      "choices": ["~20%", "~30%", "~40%", "~50%"],
+      "correctAnswer": "~30%"
+    }
+  ]
+}

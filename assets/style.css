@@ -1,0 +1,119 @@
+body {
+  text-align: center;
+  background-color: lightgray;
+  height: 100%;
+  width: 100%;
+}
+
+h3 {
+  margin: 2rem;
+}
+
+#wrapper {
+  height: 50rem;
+  width: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#divGame {
+  height: 35rem;
+  width: 50rem;
+  border-radius: 5rem;
+}
+
+#divAnswer {
+  margin: 4rem;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.answer {
+  border: 0.2rem solid #d3d3d3;
+  border-radius: 2rem;
+  display: block;
+  width: 100%;
+}
+
+.answer ~ .answer {
+  margin-top: 0.5rem;
+}
+
+.answer:hover {
+  cursor: pointer;
+  background-color: #a09e9e;
+}
+
+.answer:focus {
+  background-color: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  #wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  #divGame {
+    height: 100%;
+    width: 50rem;
+    border-radius: 5rem;
+    margin-top: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h6 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.2rem !important;
+    width: 100%;
+  }
+
+  #divAnswer {
+    margin: 2.5rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  #wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  #divGame {
+    height: 100%;
+    width: 100%;
+  }
+}

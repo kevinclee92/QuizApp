@@ -1,6 +1,6 @@
-var questionArea = $("#txtQuestion");
-var answerArea = $("#divAnswer")
-var quizApp = {
+let questionArea = $("#txtQuestion");
+let answerArea = $("#divAnswer")
+let quizApp = {
 
   questions: null,
   currentQuestion: 0,
